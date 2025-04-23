@@ -1,52 +1,97 @@
 /******************
  * YOUR CODE HERE *
- ******************
+ ******************/
+ const veggies = 0
+    const first = getFirstItemFrom(veggies(0));
+      return first
 
-
-
-// //const {
-//   getLastItemFrom,
-//   getIndex3,
-//   isLongList,
-//   firstItemIsNumber,
-//   secondCharOfThirdString,
-
-// }
-
-  function getFirstItemFrom [veggies]{}
-  return veggies[0];
-    
-  {
-
-
-   const getLastItemFrom (veggies) {
-     return  (firstItem = veggies.length-1)
-    }
-
-   getIndex3 (veggies) {
-    return (veggies(3)[0] || return veggies.length - 1)
-    }
-
-   isLongList (numArr) {
-   if (numArr.length === 0){
-   return false;
-   } else {
-    
-   if (typeof numArr[0] ===  'number' &&  numArr.length >= 10){
-      return true
+ 
+function getLast(arr) {
+  return arr.pop();   //return last element altering the original array
+    return arr.slice(-1)[0];  // return last element without altering the original array
       }
-
-   firstItemIsNumber (num) 
-
-   const numAr=['22', '54', 'Tia', 'false']{
-     if (typeof num[0] === number)
-            }
-     return true;
-     
-
-     secondCharOThirdString (fruits)   
-    const MyArr=["apples", "oranges", "bananas"]{
-}
-     return  MyArr(2)[3];
-    console.log (fruits(2)[3])
         
+ 
+function getIndex3(str){
+  if (str.length >=4) {
+    return str[3];
+  } else{
+    if(str.length > 0)
+      return str[str.length - 1]
+  }
+}
+function isLongList (numArr){
+  if (typeof numArr[0] ==='number'  >=  numArr.length >= 10){
+      return true 
+        }else{
+          return false
+            }
+}
+              
+        
+function firstItemIsNumber(arr) {
+  if (Array.isArray(arr) && arr.length > 0  && typeof arr[0]  === 'number');
+    }
+      return false;
+
+      
+
+function secondCharOThirdString(arr) {
+  if (arr.array(arr) || arr.length < 3 || typeof arr[2] !== 'string') {
+      return "This isn't a string";
+        }
+          return fruits(1)[3];
+            }
+              
+    
+
+        
+
+
+
+ /********************************************
+ * CODE DOWN HERE IS FOR INTERNAL USE ONLY. *
+ *           PLEASE DON'T TOUCH!            *
+ ********************************************/
+
+
+
+if (typeof getFirstItemFrom === 'undefined') {
+  getFirstItemFrom = undefined;
+}
+
+
+if (typeof getLastItemFrom === 'undefined') {
+  getLastItemFrom = undefined;
+}
+
+
+if (typeof getIndex3 === 'undefined') {
+  getIndex3 = undefined;
+}
+
+
+if (typeof firstItemIsNumber === 'undefined') {
+  firstItemIsNumber = undefined;
+}
+
+
+if (typeof isLongList === 'undefined') {
+  isLongList = undefined;
+}
+
+
+if (typeof secondCharOfThirdString === 'undefined') {
+  secondCharOfThirdString = undefined;
+}
+
+
+
+
+module.exports = {
+  getLastItemFrom,
+  getFirstItemFrom,
+  getIndex3,
+  firstItemIsNumber,
+  isLongList,
+  secondCharOfThirdString,
